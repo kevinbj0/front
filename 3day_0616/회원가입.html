@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<style>
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    table{
+        width: 700px;
+        height: 500px;
+        border: 1px solid black;
+        border-collapse:collapse;
+        margin: 0 auto; /*상하, 좌우*/
+        margin-top: 10px;
+    }
+    td{
+        border: 1px solid black;
+        padding-left: 5px;
+    }
+    th{
+        border: 1px solid black;
+        background-color: rgb(148, 207, 118);
+    }
+    td:nth-child(1){
+        width: 100px;
+        text-align: center;
+    }
+    input, select{
+        width: 150px;
+        height: 20px; 
+    }
+    .password{
+        font-size: 12px;
+        color: red;
+    }
+    
+</style>
+<body>
+    <!-- 회원가입 -->
+    <table>
+        <caption>회원가입</caption>
+        <tr>
+            <th>이름</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>아이디</th>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="text"> <button>중복확인</button></td>
+        </tr>
+        <tr>
+            <th>비밀번호확인</th>
+            <td><input type="text">
+               <p class="password"> * 비밀번호는 4자리 이상이어야 합니다.</p>
+            </td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input type="text"> @ <input type="text">
+                <select>
+                    <option value="">naver.com</option>
+                    <option value="">naver.com</option>
+                    <option value="">naver.com</option>
+                    <option value="">naver.com</option>
+                </select>
+                <button>중복확인</button>
+            </td>
+        </tr>
+        <tr>
+            <th>학년/반</th>
+            <td>학년
+                <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                </select>
+                반
+                <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button>가입</button>
+                <button>취소</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

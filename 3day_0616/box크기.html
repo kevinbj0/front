@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding:50px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>box 크기: 너비 + 테두리좌우 + 페딩의좌우</h1>
+    <h2>box-sizing:border-box 박스크기 유지</h2>
+    <h2>box-sizing:content-box 여백을 주면 박스크기가 커짐(기본값)</h2>
+
+    <div class="box">
+    </div>
+    <div class="box2">
+    </div>
+</body>
+</html>
