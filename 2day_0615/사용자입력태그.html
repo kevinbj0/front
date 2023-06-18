@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>주문하기</button>
+    <select>
+        <option>선택하세요</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+
+    <p>
+    <!-- 여러개 선택가능 -->
+    <input type="checkbox">짜장면
+    <input type="checkbox">짬뽕
+    <input type="checkbox">간짜장
+    </p>
+
+    <p>
+    <!-- 여러개 중 한개 선택가능 -->
+    <input type="radio" name="food">짜장면
+    <input type="radio" name="food">짬뽕
+    <input type="radio" name="food">간짜장
+    </p>
+
+    <!-- 테두리 -->
+    <fieldset>
+        <legend>개인정보</legend>
+        <!-- 라벨은 이름 클릭시 입력란으로 커서 이동 -->
+        <label for="user-name">이름</label> : <input type="text" id="user-name">
+    </fieldset>
+    <p>
+        <!-- 데이터 리스트 -> 선택도 가능, 입력도 가능 -->
+        <input type="text" list="choice">
+        <datalist id="choice">
+            <option value="사과"></option>
+            <option value="포도"></option>
+            <option value="딸기"></option>
+        </datalist>
+    </p>
+    <p>
+        <!-- text 입력영역 설정 -->
+        <textarea cols="30" rows="10">
+        </textarea>
+    </p>
+</body>
+</html>
