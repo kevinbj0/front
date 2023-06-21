@@ -39,7 +39,7 @@
         .menu{
             height: 5000px;
             width: 950px;
-            border: 1px solid white;
+            /* border: 1px solid white; */
         }
         /* 설정_오른쪽칸 */
         .content{
@@ -61,14 +61,14 @@
         }
         .first_section{
             height: 240px;
-            border: 1px solid white;
+            /* border: 1px solid white; */
             border-radius: 40px 40px 0px 0px;
             display: flex;
             background-color: rgb(41, 42, 45);
         }
         section{
             height: 190px;
-            border: 1px solid white;
+            /* border: 1px solid white; */
             display: flex;
             background-color: rgb(41, 42, 45);
         }
@@ -77,7 +77,7 @@
         }
         .last_section{
             height: 190px;
-            border: 1px solid white;
+            /* border: 1px solid white; */
             border-radius: 0px 0px 40px 40px;
             display: flex;
             background-color: rgb(41, 42, 45);
@@ -88,6 +88,7 @@
         .middle_section{
             height: 100%; width: 85%; line-height: 190px; margin-left: 80px;
         }
+        /* 프로필 */
         .profile{
             width: 190px;
             height: 190px;
@@ -98,21 +99,52 @@
             background-size: cover;
             position: relative;
         }
+        .Sink_ON{
+            height: 80px;
+            width: 80px;
+            border: 1px solid white;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
         .select_item{
             height: 150px;
             width: 950px;
-            border: 1px solid white;
+            /* border: 1px solid white; */
             margin: 20px 0px;
             border-radius: 0px 75px 75px 0px;
+            display: flex;
+            font-size: 50px;
+        }
+        .select_item:hover{
+            background-color: rgb(63, 64, 66);
         }
         .select_icon{
             width: 20%;
             height: 100%;
-            border: 1px solid white;
         }
         .select_text{
-
+            margin-top: 40px;
+            margin-left: 30px;
         }
+        .sync_button{
+            height: 120px;
+            width: 350px;
+            margin-left: 30px;
+            margin-top: 50px;
+            font-size: 50px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            border: 1px solid gray;
+            background-color: rgb(41, 42, 45);
+            color: rgb(138, 180, 248);
+        }
+        .sync_button:hover{
+            background-color: rgb(49, 53, 60);
+        }
+
     </style>
 </head>
 <body>
@@ -135,17 +167,153 @@
                     style="height: 130px; margin-left: 20px;">
                 </div>
                 <div class="select_text">
-
+                    나와 Google의 관계
                 </div>
             </div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
-            <div class="select_item"></div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    자동완성 및 비밀번호
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    개인정보 보호 및 보안
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    성능
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    모양
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    검색엔진
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    기본 브라우저
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    시작그룹
+                </div>
+            </div>
+            <!-- 칸띄움 -->
+            <div style="height: 20px; border-bottom: 5px solid gray;"></div>
+            <div style="height: 20px;"></div>
+
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    언어
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    다운로드
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    접근성
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    시스템
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    설정 초기화
+                </div>
+            </div>
+            <!-- 칸띄움 -->
+            <div style="height: 20px; border-bottom: 5px solid gray;"></div>
+            <div style="height: 20px;"></div>
+
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    확장 프로그램
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    나와 Google의 관계
+                </div>
+            </div>
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+                    Crome정보
+                </div>
+            </div>
+            
         </div>
 
 
@@ -172,7 +340,9 @@
                     <p style="line-height: 30px;">김병진 <br>
                     <nav style="color: gray;">kevinbj@naver.com에 동기화</nav></p>
                     </div>
-                    <div style="height: 100%; width: 20%;"></div>
+                    <div style="height: 100%; width: 20%;">
+                        <button class="sync_button">사용중지</button>
+                    </div>
                 </div>
                 <!-- 버튼1 -->
                 <section>
