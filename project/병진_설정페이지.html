@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(32, 33, 36);
+        }
+        header{
+            height: 200px;
+            width: 100%;
+            background-color: rgb(41, 42, 45);
+            border-bottom: 7px solid rgb(63, 64, 66);
+            position: fixed;
+            top: 0px;
+        }
+        main{
+            display: flex;;
+            color: white;
+            font-size: 30px;
+        }
+        a{
+            color: rgb(138, 180, 248);
+        }
+        hr{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+        }
+        .logo{
+            height: 150px;
+            width: 950px;
+            margin-left: 50px;
+            margin-top: 40px;
+            /* border: 1px solid wheat; */
+        }
+        .menu{
+            height: 5000px;
+            width: 950px;
+            border: 1px solid white;
+        }
+        /* 설정_오른쪽칸 */
+        .content{
+            height: 1350px;
+            width: 2500px;
+            /* border: 1px solid rgb(42, 158, 67); */
+            font-size: 50px;
+            margin-left: 100px;
+        }
+        .content_head{
+            height: 150px;
+            /* border: 1px solid white; */
+            text-align: center;
+        }
+        .user_setting{
+            height: 1050px;
+            width: 2400px;
+            margin: 0px auto;
+        }
+        .first_section{
+            height: 240px;
+            border: 1px solid white;
+            border-radius: 40px 40px 0px 0px;
+            display: flex;
+            background-color: rgb(41, 42, 45);
+        }
+        section{
+            height: 190px;
+            border: 1px solid white;
+            display: flex;
+            background-color: rgb(41, 42, 45);
+        }
+        section:hover{
+            background-color: rgb(63, 64, 66);
+        }
+        .last_section{
+            height: 190px;
+            border: 1px solid white;
+            border-radius: 0px 0px 40px 40px;
+            display: flex;
+            background-color: rgb(41, 42, 45);
+        }
+        .last_section:hover{
+            background-color: rgb(63, 64, 66);
+        }
+        .middle_section{
+            height: 100%; width: 85%; line-height: 190px; margin-left: 80px;
+        }
+        .profile{
+            width: 190px;
+            height: 190px;
+            margin: 0px auto;
+            margin-top: 25px;
+            border-radius: 50%;
+            background-image: url(https://i.pinimg.com/736x/08/c6/d8/08c6d89c4049d7063c0b5b6167cbd566.jpg);
+            background-size: cover;
+            position: relative;
+        }
+        .select_item{
+            height: 150px;
+            width: 950px;
+            border: 1px solid white;
+            margin: 20px 0px;
+            border-radius: 0px 75px 75px 0px;
+        }
+        .select_icon{
+            width: 20%;
+            height: 100%;
+            border: 1px solid white;
+        }
+        .select_text{
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 빈공간설정 -->
+    <div style="height: 200px;"></div>
+    <!-- 헤더 영역 -->
+    <header>
+        <div class="logo">
+            <img src="https://github.com/kevinbj0/front/blob/main/image_/%EC%84%A4%EC%A0%95.png?raw=true"
+            style="height: 125px;">
+        </div>
+        <div class="search"></div>
+    </header>
+    <main>
+        <!-- 왼쪽 div-->
+        <div class="menu">
+            <div class="select_item">
+                <div class="select_icon">
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%EA%B3%84%EC%A0%95.png?raw=true"
+                    style="height: 130px; margin-left: 20px;">
+                </div>
+                <div class="select_text">
+
+                </div>
+            </div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+            <div class="select_item"></div>
+        </div>
+
+
+        <!-- 오른쪽 div-->
+        <div class="content">
+            <div class="content_head">
+                <p>
+                    <img src="https://github.com/kevinbj0/front/blob/main/image_/%ED%9A%8C%EC%82%AC.png?raw=true"
+                    style="height: 70px; margin: 0px auto; margin-bottom: -10px;">
+                    조직에서 <a href="">관리하는 브라우저</a> 입니다</p>
+            </div>
+            <p style="margin-left: 40px;"> 나와 Google의 관계</p> 
+            <!-- 설정부분 -->
+            <div class="user_setting">
+                <!-- 계정정보 -->
+                <div class="first_section">
+                    <div style="height: 100%; width: 15%;">
+                        <div class="profile">
+                            <div class="Sink_ON">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 100%; width: 65%;">
+                    <p style="line-height: 30px;">김병진 <br>
+                    <nav style="color: gray;">kevinbj@naver.com에 동기화</nav></p>
+                    </div>
+                    <div style="height: 100%; width: 20%;"></div>
+                </div>
+                <!-- 버튼1 -->
+                <section>
+                    <div class="middle_section">
+                        동기화 및 Google서비스</div>
+                    <div style="height: 100%; width: 15%; line-height: 280px;">
+                        <img src="https://github.com/kevinbj0/front/blob/main/image_/%ED%99%94%EC%82%B4%ED%91%9C.png?raw=true"
+                        style="height: 130px; margin-left: 190px;">
+                    </div>
+                </section>
+                <!-- 버튼2 -->
+                <section>
+                    <div class="middle_section">
+                    Google 계정 </div>
+                    <div style="height: 100%; width: 15%;">
+                        <img src="https://github.com/kevinbj0/front/blob/main/image/%EB%B0%94%EB%A1%9C%EA%B0%80%EA%B8%B0.png?raw=true"
+                        style="height: 130px;margin-left: 190px; margin-top: 20px;">
+                    </div>
+                </section>
+                <!-- 버튼3 -->
+                <section>
+                    <div class="middle_section">
+                        Crome 프로필 맞춤설정</div>
+                    <div style="height: 100%; width: 15%;">
+                        <img src="https://github.com/kevinbj0/front/blob/main/image_/%ED%99%94%EC%82%B4%ED%91%9C.png?raw=true"
+                        style="height: 130px;margin-left: 190px;margin-top: 20px;">
+                    </div>
+                </section>
+                <!-- 버튼4 -->
+                <div class="last_section">
+                    <div style="height: 100%; width: 85%; line-height: 190px; margin-left: 80px;">
+                    북마크 및 설정 가져오기</div>
+                    <div style="height: 100%; width: 15%;">
+                        <img src="https://github.com/kevinbj0/front/blob/main/image_/%ED%99%94%EC%82%B4%ED%91%9C.png?raw=true"
+                        style="height: 130px;margin-left: 190px;margin-top: 20px;"></div>
+                </div><!-- 버튼4 -->
+            </div><!-- 설정부분 -->
+        </div> <!-- 오른쪽 div-->
+    </main>
+</body>
+</html>
