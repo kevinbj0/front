@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* outline: 1px solid black; */
+            border: 1px solid black;
+        }
+        .field{
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .box{
+            background-color: blue;
+            color: white;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+        .box:active{
+            top: 10px;
+            left: 10px;
+        }
+        .box1{
+            top: 10px;
+            left: 100px;
+        }
+        .box2{
+            bottom: 10px;
+            right: 100px;
+        }
+        .box3{
+            top: 10px;
+            right: 100px;
+        }
+        .box4{
+            bottom: 10px;
+            left: 100px;
+        }
+        .box5{
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2><mark>border판</mark>을 기준(부모영역 기준으로) 각 box를 마음대로 붙이려면</h2>
+    <div class="field">
+        <div class="box box1">a</div>
+        <div class="box box2">b</div>
+        <div class="box box3">c</div>
+        <div class="box box4">d</div>
+        <div class="box box5">e</div>
+    </div>
+    
+</body>
+</html>

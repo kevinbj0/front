@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            border: 1px solid black;
+        } */
+        *{
+            font-weight: 500;
+        }
+        input{
+            width: 390px;
+            height: 50px;
+            display: block;
+            margin:5px auto;
+            margin-left: 20px;
+            font-size: 25px;
+            outline: none;
+            border: none;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            background-color: white;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            bottom: 30px;
+        }
+        li{
+            margin: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 20px;
+            /* justify-content: center;
+            align-items: center;   */
+        }
+        img{
+            border-radius: 15px;
+        }
+        .field3 ul li img:hover{
+            box-shadow: 0px 0px 5px 2px rgb(139, 133, 133);
+        }
+
+        .wrap{
+            display: flex;
+        }
+        .field1{
+            width: 400px;
+            height: 200px;
+        }
+        .field2{
+            width: 600px;
+            height: 200px;
+        }
+        .field3{
+            width: 400px;
+            height: 200px;
+            position: relative;
+        }
+        .logo{
+            width: 300px;
+            height: 60px;
+            margin: 0px auto;
+            text-align: right;
+            line-height: 80px;
+            margin: 70px auto;
+            margin-right: 10px;
+        }
+        .search{
+            width: 500px;
+            height: 60px;
+            margin: 70px auto;
+            margin-left: 10px;
+            display: flex;
+            border: 2px solid red;
+            border-radius: 30px;
+        }
+        .search_box{
+            width: 85%;
+            /* border-radius: 15px; */
+        }
+        .search_image{
+            width: 15%;
+            text-align: right;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="field1">
+            <div class="logo">
+                <a href="https://www.lotteimall.com/main/viewMain.lotte#disp_no=5223317">
+                    <img src="https://image.newdaily.co.kr/site/data/img/2016/05/26/2016052610023_0.png"
+                    style="height:40px; padding-right: 10px; border-radius: 0px;">
+                </a>
+            </div>
+        </div>
+        <div class = "field2">
+            <div class="search">
+                <div class="search_box">
+                    <input type="text">
+                </div>
+                <div class="search_image">
+                    <button>
+                    <img src="https://img.freepik.com/premium-vector/search-icon-magnifying-glass-symbol-outline-icon_543062-139.jpg?w=2000"
+                    style="height: 45px;padding-right: 0px;">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class = "field3">
+            <ul>
+                <li>
+                    <img src="/image/로그린1.png"
+                    style="margin: 0px auto; margin-left: 2px;">
+                    <br>로그인</li>
+                <li>
+                    <img src="/image/장바구니1.png"
+                    style="margin: 0px auto;">
+                    <br>장바구니</li>
+                <li>
+                    <img src="/image/배송1.png"
+                    style="margin: 0px auto;">
+                    <br>주문배송</li>
+                <li>
+                    <img src="/image/마이페이지1.png"
+                    style="margin: 0px auto;
+                    margin-top: 8px;">
+                    <br>마이롯데</li>
+            </ul>
+        </div>
+    </div>
+<hr>
+</body>
+</html>

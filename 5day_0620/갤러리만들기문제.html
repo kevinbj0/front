@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .gallery-wrap{
+            width: 500px;
+            height: 500px;
+
+            /* border:1px solid black; */
+        }
+
+        .gallery{
+            width: 500px;
+            height: 500px;
+
+            background-image: url(https://wimg.mk.co.kr/meet/neds/2021/11/image_readtop_2021_1031636_16357176624833370.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            /* border: 1px solid black; */
+        }
+
+        .prevBtn{
+            width: 30px;
+            height: 60px;
+            border-radius:   0px 10px 10px  0px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            line-height: 30px;
+            text-align: center;
+            color: rgb(205, 205, 195);
+        }
+        .prevBtn:hover{
+            width: 100px;
+            line-height: 60px;
+        }
+        .nextBtn{
+            width: 30px;
+            height: 60px;
+            border-radius:  10px 0px 0px 10px;
+            background-color:red;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            line-height: 30px;
+            text-align: center;
+            color: rgb(205, 205, 195);
+        }
+        .nextBtn:hover{
+            width: 100px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> 이전 다음 버튼을 갤러리 화면에 붙여 보세요 !!! </h2>
+    <!-- 갤러리전체를 감싸는 공간-->
+    <div class="gallery-wrap">
+
+        <!-- 이미지 갤러리가 나오는 공간-->
+        <div class="gallery">
+            <!-- 이전 다음 버튼-->
+            <div class="prevBtn"><strong>이 전</strong></div>
+            <div class="nextBtn"><strong>다 음</strong></div>
+        </div>
+    </div>
+</body>
+</html>

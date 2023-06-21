@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            border: 1px solid black;
+        } */
+        .wrap{
+            margin: 10px;
+        }
+        .field1{
+            width: 400px;
+            height: 60px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            position: relative;
+            border: 2px solid black;
+            background-color: rgb(244, 236, 195);
+        }
+        .field2{
+            width: 400px;
+            height: 60px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            position: relative;
+            border: 2px solid black;
+        }
+        .field3{
+            width: 400px;
+            height: 60px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            position: relative;
+            border: 2px solid black;
+            background-color: rgb(178, 211, 240);
+        }
+        .button{
+            position: absolute;
+            width: 400px;
+            height: 60px;
+            top: 0px;
+            left: 0px;
+            /* outline: 1px solid black; */
+        }
+        .image{
+            width: 20%;
+            height: 60px;
+            /* outline: 1px solid black; */
+        }
+        .text{
+            width: 100%;
+            height: 60px;
+            position:absolute;
+            top: 0px;
+            right: 0px;
+            text-align: center;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="field1">
+            <div class="image">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU9Wpj///8xUZSnss2jr8ups8w2VZY+XJrv8fbo6/M4V5agrMhieKpmfKwpTJEuUJP3+PtMZp9zhrKQnsDb3+q5wtfByduGlrvV2ufh5u/M0+LDy9yWpMR/kblqf65XbqN3ibRIYp0iSI+CWTtqAAAEaElEQVR4nO3d63aqMBAFYA0aTWwTrtbetPX9H/KctmtZLeAEcITJ2vu/TL6FEDQJmc1jz2zsBrAHQvmBUH4glJ+aMC2rRGyWVZkSQlNkziu58S4rzDVhopWdyY5VetEuzN3Y7btJXN4mzP3YbbtRfN4sTOI4g19xiyah0WO364bRpkFYqLGbdcOooi5MM+l30fPYLK0Jy3iuwq+4siasYrmR/sRXNWES02X4/0JMohcuIJQeCOUHQvmBUH4glB8I5QdC+YFQfiCUn6kLrVXeO3f0drWaaauVO7rveO+V1tqS/3xOWWi1t1m+2e7M5VBgujbPu5fXavn2vj9kn8RRpivULnvaPs/JpA/XT+NEhdbrYlcbxG2ORKH1WdWsiUNo/cNruE+gUK86nD+JQve+7gYUJtSq4wmUJtRZQPcgWageun5DhQnVYw+fJKHuB5QjtIfAZxixQm2aAdEIj52eYwQK1VNfoBDh2ayXSIVu2xsoQ6j3/YEyhH4XubBvXy9H6F4iF9psCFCC8HfmWaxC3/d5TYpwUFchQvjbhGiFZXPLoxHaz/6PpN95nLwwb254PWabFB/7xz/ZE0Mz4wvVJoj3/HZwX+NpVv8NdfzRhT7kp2/6pPquNJuAMOAvUjPr36YJCAOA9Ehve8YXBqzOfRyyEGt0oT2QwO2gRTzjC+nOgujSiYwu1OSfbOY4qMD4wjdKOHAd1uhCusMvhi34HF9I/rIYdCedgnBJCQcu+BQgHFpg+sKB664hZA+EENIFIOQOhBDSBSDkDoQQ0gUg5A6EENIFIOQOhFKEuvUdlUdyMo27+o5L0n8foc4Xm7aQM75aP/mTaaw/pL+KvZNORDhsXte1GGroTbxwF72QHJkSL9xQrRUvfJrGfBpGITn2Jl74SY29iReS8zSkC8nuULzwhZzGIF1IT9SQLiS7Q/HCj4n8euITHibyfho+IT0TRbhwTf/FIVxY0m0VLqS7Q+nCZfTCgHmLwoV59EK6OxQuDNmKQ7bQBEw9lS0sA6aAyxZuoxeGNFW2MGQav+yRGfrX4d1G1zbpui3kGtnWT67XAd3h3caAV23R5Om1rZ9dhVQefZTb06Pc0a+3kDGOf6UBEEJIFoCQOxBCSBeAkDsQQkgXgJA7EEJIF4CQOxBCSBeAkDsQQkgXgJA7EEJIF4CQOxBCSBeAkDsQQkgXgJA7EEJIF4CQOxBCSBeAkDsQQkgXgJA7EEJIF4CQOxBCSBeAkDsQQkgXgJA7EEJIF4CQOxByCJeRCU/vAjgJB+432LUB3EJf1YTloG0/u4Zd6E7bfp+EIS99uV24hTY7vdLgJJwX97wQuYWqOB3oV2gGfi+6tYBZqE2DcJ7c8UpkFrqzTUDPhPP8frdTXqE63234XDjP73YWWYVuf36gC+E80X13a+8YPqFV+nKf2kvh3BSZ81d3lrhNhu5v0RbvssJcHmj298hpWSXE3hK3yOvaXE+voyZVWXu1T00YXSCUHwjlB0L5iV/4D531dFahAzpqAAAAAElFTkSuQmCC"
+                style="height: 50px; margin: 5px auto; margin-left: 10px;">
+            </div>
+            <div class="text">
+                Facebook login
+            </div>
+            <a href="https://www.naver.com/">
+                <div class="button"></div>
+            </a>
+        </div>
+
+        <div class="field2">
+            <div class="image">
+                <img src="data:image/png;base64,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"
+                style="height: 50px; margin: 5px auto; margin-left: 10px;">
+            </div>
+            <div class="text">
+                Google login
+            </div>
+            <a href="https://www.naver.com/">
+                <div class="button"></div>
+            </a>
+        </div>
+
+        <div class="field3">
+            <div class="image">
+                <img src="https://play-lh.googleusercontent.com/8sc6LSo3dRf54GaLdQR8UZfzd_fgHgWMJlNxGLP1HWPEU7YY4UxkyHc8-qCNwtyiqO55"
+                style="height: 50px; margin: 5px auto; margin-left: 10px;">
+            </div>
+            <div class="text">
+                Twitter login
+            </div>
+            <a href="https://www.naver.com/">
+                <div class="button"></div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

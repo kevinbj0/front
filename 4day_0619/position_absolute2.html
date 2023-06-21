@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /*문서를 기준으로 -> 현재는 문서의 끝*/
+            position:absolute;
+            left: 500px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2> 문서상에서 요소 배치방법  position:absolute</h2>
+    <p>
+         - 문서를 기준으로 배치함  <br>
+         - 문서상의 원래 흐름을 벗어남 <br>
+         -> 겹칠 수 있음
+    </p>
+
+    <div class="box">
+    </div>
+</body>
+</html>

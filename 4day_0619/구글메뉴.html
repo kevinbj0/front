@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            height: 200px;
+            background-color: rgb(178, 153, 120);
+            position: relative;
+        }
+        .menu{
+            width: 300px;
+            height: 80px;
+            /* border: 1px solid black; */
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        .item1{
+            width: 60px;
+            height: 60px;
+            border: 1px solid white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            margin-left: 10px;
+        }
+        .item1:hover{
+            position: relative;
+            background-color: rgb(223, 211, 182);
+        }
+        .item2{
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid white; */
+            text-align: center;
+            line-height: 40px;
+            margin-left: 10px;
+            color: white;
+            background-color: rgb(109, 54, 54);
+        }
+        .item2:hover{
+            /* 좌우 상하 번짐 두깨  */
+            box-shadow: 0px 0px 10px 5px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <div class="item1">Gmail</div>
+            <div class="item1">로그인</div>
+            <div class="item1">이미지</div>
+            <div class="item2">J</div>
+        </div>
+    </div>
+</body>
+</html>

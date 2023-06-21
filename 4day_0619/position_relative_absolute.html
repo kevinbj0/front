@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 200px;
+            background-color: aqua;
+
+            /* 자기 자신을 기준으로 변경 */
+            position: relative;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+
+            /* 부모를 기준으로 */
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .menu {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+
+            /* 부모를 기준으로 */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .search{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+
+            position: absolute;
+            top: 50px;
+            left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="menu">menu</div>
+        <div class="search">검색바</div>
+    </div>
+
+</body>
+
+</html>

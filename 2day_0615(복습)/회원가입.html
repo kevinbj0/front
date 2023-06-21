@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid black;
+        width: 70%;
+        height: 500px;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+      button {
+        width: 110px;
+      }
+      .moveCenter {
+        text-align: center;
+      }
+      .aquaCol {
+        background-color: rgb(0, 253, 232);
+      }
+
+      .lineUp {
+        border: 1px solid black;
+      }
+      .fontWeight {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="moveCenter">회원가입</div>
+    <table>
+      <tr>
+        <td class="aquaCol moveCenter">이름</td>
+        <td class="lineUp"><input type="text" /></td>
+      </tr>
+      <tr>
+        <td class="aquaCol moveCenter">아이디</td>
+        <td class="lineUp"><input type="text;" /><button>중복확인</button></td>
+      </tr>
+      <tr>
+        <td class="aquaCol moveCenter">비밀번호</td>
+        <td class="lineUp">
+          <input type="text;" />
+          <p>&#8251; 비밀번호는 4자리 이상이어야 한다.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="aquaCol moveCenter">비밀번호 확인</td>
+        <td class="lineUp"><input type="text;" /></td>
+      </tr>
+      <tr>
+        <td class="aquaCol moveCenter">이메일</td>
+        <td class="lineUp">
+          <input type="text;" />&#64;<input type="text;" />
+          <select>
+            <option>선택하세요</option>
+            <option>naver.com</option>
+            <option>google.com</option>
+            <option>daum.net</option>
+          </select>
+          <button>이메일중복확인</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="aquaCol moveCenter">학년/반</td>
+        <td class="lineUp">
+          <select>
+            <option>선택하세요</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          학년
+          <select>
+            <option>선택하세요</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          반
+        </td>
+      </tr>
+      <tr class="moveCenter lineUp">
+        <td colspan="2"><button>가입</button><button>취소</button></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field1{
+            height: 200px;
+            position: relative;
+            /* border: 1px solid black; */
+        }
+        .field2{
+            height: 500px;
+            /* border: 1px solid black; */
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 80px auto;
+        }
+        thead{
+            background-color: rgb(245, 231, 224);
+        }
+        tbody{
+            color: gray;
+        }
+        td{
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        td button{
+            width: 100px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: rgb(231, 92, 92);
+            color: white;
+        }
+        tfoot :nth-child(2){
+            background-color: rgb(231, 92, 92);
+        }
+        .item1{
+            height: 60px;
+            width: 150px;
+            display: flex;
+            position: absolute;
+            left: 30px;
+            bottom: 0px;
+            /* border: 1px solid black; */
+        }
+        .text1{
+            line-height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="field1">
+        <div class="item1">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561141.png"
+                style="height: 55px;">
+            </div>
+            <div class="text1">
+                <strong>홈으로</strong>
+            </div>
+        </div>
+    </div>
+    <div class="field2">
+        <table>
+            <caption><strong>CART LIST
+                <img src="https://cdn.icon-icons.com/icons2/788/PNG/512/shopping-cart_icon-icons.com_65051.png"
+                style="height: 40px;"></strong></caption>
+            
+            <thead>
+                <tr>
+                    <td><strong>주문날짜</strong></td>
+                    <td><strong>제품명</strong></td>
+                    <td><strong>단가</strong></td>
+                    <td><strong>수량</strong></td>
+                    <td><strong>금액</strong></td>
+                    <td><strong>삭제</strong></td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>삭제</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5"></td>
+                    <td><button>주문하기</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
