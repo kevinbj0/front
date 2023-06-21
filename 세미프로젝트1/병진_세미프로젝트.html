@@ -17,12 +17,11 @@
         }
         main{
             height: 500px;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         .add_field{
             height: 200px;
             width: 400px;
-            border: 1px solid white;
             margin: 0px auto;
             margin-top: 30px;
             display: flex;
@@ -30,11 +29,21 @@
         .add_site{
             height: 200px;
             width: 200px;
-            border: 1px solid white;
             margin: 0px auto;
             text-align: center;
             color: white;
             font-size: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .site_tag{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 0px;
+        }
+        .add_site:hover{
+            background-color: rgb(71, 74, 77);
         }
         .left_info{
             height: 80px;
@@ -75,7 +84,7 @@
             margin: 5px;
         }
         .item1:hover{
-            background-color: rgb(127, 137, 145);
+            background-color: rgb(71, 74, 77);
         }
         .item2{
             width: 50px;
@@ -128,7 +137,7 @@
             border-radius: 13px;
         }
         .search_voice:hover{
-            background-color: rgb(127, 137, 145);
+            background-color: rgb(71, 74, 77);
         }
         a{
             color: white;
@@ -177,9 +186,13 @@
         </div>
         <div class="add_field">
             <div class="add_site">
-                <img src="https://github.com/kevinbj0/front/blob/main/image/%EC%B6%94%EA%B0%80%EB%B2%84%ED%8A%BC.png?raw=true"
+                <img src="https://github.com/kevinbj0/front/blob/main/image/%EB%84%A4%EC%9D%B4%EB%B2%84(%EB%8F%99%EA%B8%80).png?raw=true"
                 style="height: 160px;">
                 <br>naver.com
+                <a href="https://www.naver.com/">
+                <div class="site_tag">
+                </div>
+                </a>
             </div>
             <div class="add_site">
                 <img src="https://github.com/kevinbj0/front/blob/main/image/%EC%B6%94%EA%B0%80%EB%B2%84%ED%8A%BC.png?raw=true"
