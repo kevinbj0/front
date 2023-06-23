@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 함수정의
+        function check(){
+            // 태그 받기
+            let useridTag=document.getElementById("userid");
+            // alert(useridTag);
+
+            // 값 가져오기
+            let userid = useridTag.value;
+            alert(userid);
+
+            //내용도 바꿀 수 있음
+            // useridTag.value = "김민규";
+
+            //판단
+            if(userid == ""){
+                alert("입력해주세요");
+            }
+        }
+    </script>
+</head>
+<body>
+    아이디
+    <input type="text" id="userid">
+    <!--cleck() 함수호출 -->
+    <button onclick="check()">클릭</button>
+
+    <img src="">
+
+</body>
+</html>
