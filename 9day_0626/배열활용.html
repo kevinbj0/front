@@ -67,7 +67,7 @@
         "dog"
         */
       let word1 = "apple";
-      console.log("워드1 : " + word1);
+      console.log("단어 : " + word1);
       let word2;
       let word3;
       let word4;
@@ -123,6 +123,7 @@
       let word54;
       let word55;
       let word56;
+      //반복문 사용할 수 없음
 
       //1차원배열 8개   : 변수의 집합 , 배열의 요소가 변수 한 개 의미
       let week1 = [
@@ -160,8 +161,8 @@
         "elephant",
         "internet",
         "flower",
-        "flower",
-        "flower",
+        "fgrer",
+        "werwer",
       ];
       let week5 = [
         "apple",
@@ -199,6 +200,9 @@
         "internet",
         "flower",
       ];
+      for (i = 0; i < week1.length; i++) {
+        console.log("반복문 사용 : " + week1[i]);
+      }
 
       console.log(week1);
       // console.log(week2[1]);
@@ -217,8 +221,18 @@
         week2,
         ["apple", "banana", "cat", "dog", "elephant", "internet", "flower"],
       ];
-      let month2 = [[], [], [], []];
-      console.log(month1);
+      // let month2 = [[], [], [], []];
+
+      //2차원 배열 출력
+      for (j = 0; j < month1.length; j++) {
+        for (i = 0; i < month1[j].length; i++) {
+          console.log(
+            "[" + j + "]" + "[" + i + "]" + ", 단어 : " + month1[j][i]
+          );
+        }
+      }
+
+      // console.log(month1);
 
       let year = [
         [
@@ -234,7 +248,7 @@
           ["apple", "banana", "cat", "dog", "elephant", "internet", "flower"],
         ],
       ];
-      console.log(year);
+      // console.log(year);
       //기준으로부터 행정보, 열정보가 필요함
     </script>
   </body>

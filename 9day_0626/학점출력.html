@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let grade;
+      let score = 0;
+      while (score >= 0) {
+        score = prompt("점수를 입력하세요");
+        score = parseInt(score);
+
+        if (score >= 90) {
+          grade = "A";
+        } else if (score >= 80) {
+          grade = "B";
+        } else if (score >= 70) {
+          grade = "C";
+        } else {
+          grade = "F";
+        }
+        alert("학점은 " + grade);
+        alert("점수는 " + score + "점");
+      }
+    </script>
+  </body>
+</html>

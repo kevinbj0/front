@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../font/font.css" />
+    <style>
+      body {
+        font-family: "maple";
+      }
+      input {
+        background-color: rgb(156, 113, 104);
+        border: none;
+        border-radius: 5px;
+        color: white;
+      }
+      input:hover {
+        background-color: rgb(176, 154, 154);
+      }
+    </style>
+    <script>
+      function search() {
+        let weekInputTag = document.getElementById("weekInput");
+        let weekInput = weekInputTag.options[weekInputTag.selectedIndex].value;
+        let dayInputTag = document.getElementById("dayInput");
+        let dayInput = dayInputTag.options[dayInputTag.selectedIndex].value;
+        dayInput = parseInt(dayInput);
+        let menu = [
+          ["신의주", "파스타", "돈까스", "파랄가이즈", "인도커리"],
+          ["중국집", "갈비정식", "육회비빔밥", "대패볶음밥", "피자"],
+          ["파랄가이즈", "신의주", "라멘맛집", "스테이크", "돈까스"],
+          ["육회비빔밥", "파스타", "인도커리", "순대국", "중국집"],
+        ];
+        // //메뉴 전체 출력
+        // for (let i = 0; i < menu.length; i++) {
+        //   for (let j = 0; j < menu[i].length; j++) {
+        //     console.log(menu[i][j]);
+        //   }
+        // }
+
+        let select_day;
+        switch (dayInput) {
+          case 0:
+            select_day = "월";
+            break;
+          case 1:
+            select_day = "화";
+            break;
+          case 2:
+            select_day = "수";
+            break;
+          case 3:
+            select_day = "목";
+            break;
+          case 4:
+            select_day = "금";
+            break;
+          default:
+            break;
+        }
+        alert(
+          select_day + "요일의 메뉴는 " + menu[weekInput][dayInput] + " 입니다."
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h2>메뉴 정하기</h2>
+    <p>
+      Week<br />
+      <select id="weekInput">
+        <option>week 선택</option>
+        <option value="0">1주차</option>
+        <option value="1">2주차</option>
+        <option value="2">3주차</option>
+        <option value="3">4주차</option>
+      </select>
+    </p>
+    <p>
+      요일 선택<br />
+      <select id="dayInput">
+        <option>요일 선택</option>
+        <option value="0">월</option>
+        <option value="1">화</option>
+        <option value="2">수</option>
+        <option value="3">목</option>
+        <option value="4">금</option>
+      </select>
+    </p>
+    <input type="button" value="검색" onclick="search();" />
+  </body>
+</html>
