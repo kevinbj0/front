@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            let inputTag = document.getElementById("userinput");
+            let _Input = inputTag.value;
+            // alert(_Input);
+
+            if(_Input>20){
+                alert("성인입니다");
+            }
+            else if(_Input>10){
+                alert("청소년입니다");
+            }
+            else{
+                alert("대상이 아닙니다");
+            }
+        }
+        let age = prompt("나이를 입력하세요.");
+        alert("당신의 나이는"+age+"살 이군요.");
+        if(age>20){
+            alert("성인입니다");
+        }
+        else if(age>10){
+            alert("청소년입니다");
+        }
+        else{
+            alert("대상이 아닙니다");
+        }
+    </script>
+
+</head>
+<body>
+    <p>나이를 입력받아서 성인인지 판단하는 프로그램 작성하기</p>
+    <!-- 나이를 입력받는다. prompt -->
+    <!-- 나이를 판단한다. -->
+    <!-- 알림창에 정보를 출력할 것 -->
+    <input type="text" id="userinput">
+    <button onclick="check()">결과보기</button>
+</body>
+</html>

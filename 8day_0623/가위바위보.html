@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>가위바위보 전적</h2>
+    <script>
+        let player, computer;
+        let win = 0, lose = 0, draw = 0;
+        while (1) {
+            // 사용자 입력
+            player = prompt("1: 가위, 2: 바위, 3: 보  0: 종료(전적)");
+            player =parseInt(player);
+            // 컴퓨터 입력
+            computer = Math.floor(Math.random()*3)+1;
+            // alert("컴퓨터 : "+computer);
+
+            // 무승부 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            if (player == computer) {
+                document.write("무승부", '<br>');
+                // alert("무승부");
+                draw++;
+            }
+            
+            // player : 가위 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            else if (player == 1) {
+                document.write("player : 가위", '<br>');
+                //이길 때
+                if (computer == 3) {
+                    document.write("computer : 보 -> 승리", '<br>');
+                    // alert("승리");
+                    win++;
+                }
+                //질 때
+                else{
+                    document.write("computer : 주먹 -> 패배", '<br>');
+                    // alert("패배");
+                    lose++;
+                }
+            }
+    
+            // player : 바위 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            else if (player == 2) {
+                document.write("player : 바위", '<br>');
+                //이길 때
+                if (computer == 1) {
+                    document.write("computer : 가위 -> 승리", '<br>');
+                    // alert("승리");
+                    win++;
+                }
+                //질 때
+                else{
+                    document.write("computer : 보 -> 패배", '<br>');
+                    // alert("패배");
+                    lose++;
+                }
+            }
+            
+            // player : 보 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            else if (player == 3) {
+                document.write("player : 보", '<br>');
+                //이길 때
+                if (computer == 2) {
+                    document.write("computer : 바위 -> 승리", '<br>');
+                    // alert("승리");
+                    win++;
+                }
+                //질 때
+                else{
+                    document.write("computer : 가위 -> 패배", '<br>');
+                    // alert("패배");
+                    lose++;
+                }
+            }
+
+            // 다른값 : 종료 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+            else {
+                break;
+            }
+            document.write('<br>', "전적 - " + win + "승 " + lose + "패 " + draw + "무",'<br><br><hr>');
+        }
+    </script>
+</body>
+
+</html>

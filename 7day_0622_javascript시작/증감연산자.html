@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>증감연산자 ++, --</h2>
+    <p>연산자는 반드시 연산의 결과가 발생한다.</p>
+    <script>
+        let a=10;
+        a=a+1;
+        //질문
+        // let c = "안녕하세요"
+        // a=c+1; 
+        // console.log(a)
+
+        a++;
+        console.log("1번 : "+a); 
+
+        ++a;
+        console.log("2번 : "+a); 
+        // ++a 증가를 먼저 a++ 증가를 나중에
+
+        //공통점: 변수의 값을 1증가 시킴
+        //다른점: 연산의 결과가 다름
+
+        let b=10, c=10;
+        let rtn1, rtn2;
+
+        rtn1=b++; //나중에 증가
+        rtn2=++c; //먼저 증가
+        
+        console.log(b); 
+        console.log(c); 
+
+        console.log(rtn1); //10
+        console.log(rtn2); 
+
+        rtn1 = b; //b를 한번 더 호출
+        console.log(rtn1); //11
+
+        let sum = 10+20;
+
+        //아스키코드로?
+        // let f = "a";
+        // f = f++;
+        // console.log(f);
+    
+    </script>
+</body>
+</html>

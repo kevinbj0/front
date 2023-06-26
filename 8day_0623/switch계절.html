@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>switch문 : 분기문</h2>
+    <script>
+        let month = 11;
+        let M_case;
+
+        // 12월, 1월, 2월 겨울
+        if(month == 12 || month <= 2){
+            M_case = 1;
+        }
+        // 3월, 4월, 5월 봄
+        else if(month <= 5){
+            M_case = 2;
+        }
+        // 6월, 7월, 8월 여름
+        else if(month <= 8){
+            M_case = 3;
+        }
+        // 9월, 10월, 11월 가을
+        else{
+            M_case = 4;
+        }
+        
+        switch(M_case){
+            case 1:
+                alert("겨울 입니다.");
+                break;
+            case 2:
+                alert("봄 입니다");
+                break;
+            case 3:
+                alert("여름 입니다");
+                break;
+            case 4:
+                alert("가을 입니다");
+                break;
+            default:
+                alert("오류");
+                break;
+        }
+    </script>
+</body>
+</html>
