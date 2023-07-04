@@ -70,6 +70,7 @@
       .bj_li_cover {
         height: 100%;
         transition: 0.3s;
+        position: relative;
       }
       .bj_li_cover_text {
         height: 35px;
@@ -79,6 +80,18 @@
         text-align: center;
         padding-top: 63px;
         display: none;
+      }
+      .bj_li_cover_play {
+        height: 42px;
+        width: 42px;
+        position: absolute;
+        right: 7px;
+        bottom: 7px;
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9E%AC%EC%83%9D_%ED%9A%8C%EC%83%89.png?raw=true");
+        background-size: cover;
+      }
+      .bj_li_cover_play:hover {
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9E%AC%EC%83%9D_%EA%B7%B8%EB%A6%B0.png?raw=true");
       }
       .bj_li_cover:hover {
         background-color: rgba(0, 0, 0, 0.7);
@@ -187,6 +200,7 @@
                     ><br /><br />
                     <a href="" class="bj_li_a">틴탑</a>
                   </div>
+                  <div class="bj_li_cover_play"></div>
                 </div>
               </li>
               <!-- 앨범 Image 2 -->
