@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="./imgs/boy.png" onclick="changeImg()" id="pimg" />
+
+    <script>
+      let flag = true;
+      function changeImg() {
+        pimg = document.getElementById("pimg");
+        if (flag == true) {
+          pimg.src = "./imgs/girl.png";
+        } else {
+          pimg.src = "./imgs/boy.png";
+        }
+        flag = -flag;
+      }
+    </script>
+  </body>
+</html>

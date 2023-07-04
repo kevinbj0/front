@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 기능- 성인인지 판단
+      // 입력- 생일정보
+      // 반환- true 성인, false 성인 x
+
+      //생일년도 입력
+      let birth = prompt("생일년도를 입력하세요");
+      birth = parseInt(birth);
+
+      //성인 판별 함수
+      function isAdult0(birth) {
+        let age = 2023 - birth;
+        if (age < 19) {
+          return false;
+        } else if (age > 19) {
+          return true;
+        }
+      }
+
+      //함수 호출 -> 반환
+      let result = isAdult0(birth);
+
+      //구매 가능여부 확인
+      if (result == true) {
+        alert("물건을 구매할 수 있습니다.");
+      } else {
+        alert("구매할 수 없습니다.");
+      }
+    </script>
+  </body>
+</html>

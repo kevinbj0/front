@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let msg = [
+        "여름이 왔네요",
+        "프론트 프로젝트 시작 몇일전!!",
+        "밖은 덥지만 에이콘은 시원해요",
+        "여기가 천국 좋고",
+      ];
+      let i = 0;
+      function nextMsg() {
+        let gallery = document.querySelector(".gallery");
+        gallery.innerHTML = msg[i];
+        i++;
+        if (i >= msg.length) {
+          i = 0;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="gallery">갤러리가 시작합니다.</div>
+    </div>
+
+    <button onclick="nextMsg()">다음</button>
+  </body>
+</html>

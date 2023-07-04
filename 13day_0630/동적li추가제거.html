@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="addLi()">li추가</button>
+    <ul id="list"></ul>
+    <script>
+      function addLi() {
+        //추가
+        // 부모를 사용할 대상(태그)를 선택한다.
+        let ulE = document.getElementById("list");
+
+        let li = document.createElement("li");
+        li.innerHTML = "망고";
+
+        ulE.appendChild(li);
+
+        li.addEventListener("click", function () {
+          let p = this.parentElement;
+          p.removeChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>

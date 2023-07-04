@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //문서로드가 완료되면 실행할 코드 작성
+      //   window.addEventListener("load", function () {
+      //     alert("로드완료");
+      //     let content = document.querySelector(".content");
+      //     content.innerHTML = "나는 변경된 내용이다";
+      //   });
+
+      window.addEventListener("load", func1); //콜백함수
+      function func1() {
+        alert("로드완료");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="content">나는 내용이다</div>
+    <!-- <script>
+      //문서로드가 완료된 시점에 dom 제어하는 코드 작성
+      let content = document.querySelector(".content");
+      content.innerHTML = "나는 변경된 내용이다";
+    </script> -->
+  </body>
+</html>

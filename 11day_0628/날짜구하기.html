@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //date기본제공
+      let currentDate = new Date();
+      console.log(currentDate);
+
+      let currentYear = currentDate.getFullYear();
+      console.log(currentYear);
+
+      let bornDate = new Date("1997-11-21");
+      console.log(bornDate);
+      let bornYear = bornDate.getFullYear();
+      console.log(bornYear);
+
+      let age = currentYear - bornYear;
+      console.log(age);
+      //나이구하기
+      //현재년도- 태어난년도
+    </script>
+  </body>
+</html>

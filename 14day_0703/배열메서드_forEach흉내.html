@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["apple", "banana", "mango"];
+      function myForEach(func) {
+        for (let i = 0; i < arr.length; i++) {
+          func(arr[i], i);
+        }
+      }
+
+      myForEach(function (item, i) {
+        console.log(item + "  인덱스 : " + i);
+      });
+
+      //함수를 작성해서 넘겨주는 방법
+      //1. 함수이름을 사용해서 넘겨줌
+      //2. 익명함수로 넘겨줌
+      myForEach(a);
+      function a(item, i) {
+        console.log(item + "  인덱스 : " + i);
+      }
+    </script>
+  </body>
+</html>

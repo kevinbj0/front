@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = new Array(4);
+      arr[0] = 2;
+      arr[1] = 4;
+      arr[2] = 6;
+      arr[3] = 12;
+
+      console.log(arr);
+
+      let arr2 = [2, 4, 6, 8];
+      //map : 배열의 요소 이용해서 새로운 배열을 만듬
+      let newArr = arr2.map(function (item, index) {
+        return item * index;
+      });
+
+      console.log(arr2);
+      console.log(newArr); //0,4,12,24
+
+      let arr3 = [2, 4, 6, 8];
+      let newArr3 = [];
+
+      //map 사용x
+      for (let i = 0; i < arr3.length; i++) {
+        newArr3[i] = arr3[i] * i;
+      }
+
+      console.log(arr3);
+      console.log(newArr3);
+    </script>
+  </body>
+</html>

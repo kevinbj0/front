@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      ul {
+        list-style: none;
+      }
+      .menu {
+        display: flex;
+        border: 1px solid black;
+      }
+
+      .menu-item {
+        width: 150px;
+        height: 50px;
+        background-color: bisque;
+      }
+      .sub-menu {
+        /* display: none; 은 transition 효과를 못준다 */
+        height: 0px;
+        overflow: hidden; /* 넘치는 내용을 숨겨준다 */
+      }
+      .menu-item:hover {
+        height: 300px;
+        transition: 0.5s;
+      }
+      .menu-item:hover .sub-menu {
+        height: 300px;
+      }
+      .visual {
+        height: 300px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li class="menu-item">
+        상위메뉴
+        <ul class="sub-menu">
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        상위메뉴
+        <ul class="sub-menu">
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        상위메뉴
+        <ul class="sub-menu">
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        상위메뉴
+        <ul class="sub-menu">
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+          <li>하위메뉴</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="visual"></div>
+  </body>
+</html>

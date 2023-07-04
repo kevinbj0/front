@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+    <input type="checkbox" />
+
+    <button onclick="selDelete()">선택삭제</button>
+
+    <script>
+      function selDelete() {
+        // 타입이 checkbox인 것만 가져올 수 있음
+        let ch_box = document.querySelectorAll("input[type = 'checkbox']");
+        alert(ch_box.length);
+
+        let p = document.querySelector("body");
+
+        for (let i = 0; i < ch_box.length; i++) {
+          let ch = ch_box[i];
+          if (ch.checked == true) {
+            p.removeChild(ch);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

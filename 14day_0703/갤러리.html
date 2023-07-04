@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // window.addEventListener("load",function(){});
+      let msg = [
+        "여름이 왔네요",
+        "프론트 프로젝트 시작 몇일전!!",
+        "밖은 덥지만 에이콘은 시원해요",
+        "여기가 천국 좋고",
+      ];
+      let i = 0; //배열의 인덱스
+      //전부 로드 후 동작
+      window.addEventListener("load", function () {
+        let gallery = document.querySelector(".gallery");
+        gallery.innerHTML = msg[i];
+
+        let nextBtn = document.querySelector("#nextBtn");
+        nextBtn.addEventListener("click", function () {
+          gallery.innerHTML = msg[i];
+          i++;
+          if (i >= msg.length) {
+            i = 0;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="gallery">갤러리가 시작합니다.</div>
+    </div>
+
+    <button id="nextBtn">다음</button>
+  </body>
+</html>

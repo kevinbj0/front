@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        outline: 1px solid black;
+      } */
+      .wrap {
+        height: 660px;
+        width: 650px;
+        margin: 80px auto;
+        padding: 20px;
+        text-align: center;
+        line-height: 100px;
+        border: 1px solid black;
+      }
+      .dtitle {
+        height: 50px;
+        line-height: 35px;
+        /* border: 1px solid black; */
+      }
+      .dhead {
+        height: 200px;
+        display: flex;
+        padding: 10px;
+        padding-top: 10px;
+      }
+      .dhead_item {
+        height: 170px;
+        width: 50%;
+
+        margin: 15px;
+      }
+      .dhead_text {
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      .dhead_image{
+        height: 140px;
+        border: 1px solid black;
+      }
+      .dhead_input{
+        height: 140px;
+        width: 280px;
+        border: 1px solid black;
+      }
+      .dbody{
+        height: 100px;
+      }
+      .dbody_wrap{
+        height: 60px;
+        width: 600px;
+        margin: 25px auto;
+        display: flex;
+      }
+      .dbody_item{
+        width: 200px;
+        display: block;
+      }
+      .dbody_text{
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      .dbody_gage{
+        height: 20px;
+        margin-top: 10px;
+        border: 1px solid black;
+      }
+      .content{
+        height: 100px;
+        width: 600px;
+        margin: 0px auto;
+        position: relative;
+      }
+      .content_wrap{
+        height: 60px;
+        width: 600px;
+        text-align: left;
+        line-height: 25px;
+        position: absolute;
+        bottom: 0px;
+      }
+      .content_item{
+        height: 25px;
+        width: 600px;
+        margin-top: 10px;
+        border: 1px solid black;
+
+      }
+      .content_item2{
+        height: 50px;
+        width: 600px;
+        margin-top: 10px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="dtitle">
+        <h3>REVIEW DETAIL</h3>
+      </div>
+      <div class="dhead">
+        <div class="dhead_item">
+          <div class="dhead_text"><strong>이미지</strong></div>
+          <div class="dhead_image"></div>
+        </div>
+        <div class="dhead_item">
+          <div class="dhead_text"><strong>맛평가 (후기)</div>
+          <input type="text"class="dhead_input">
+        </div>
+      </div>
+      <div class="dbody">
+        <div class="dbody_wrap">
+            <div class="dbody_item">
+                <div class="dbody_text">연령대</div>
+                <div class="dbody_gage"></div>
+            </div>
+            <div class="dbody_item">
+                <div class="dbody_text">만족도</div>
+                <div class="dbody_gage"></div>
+            </div>
+            <div class="dbody_item">
+                <div class="dbody_text">성별</div>
+                <div class="dbody_gage"></div>
+            </div>
+        </div>
+      </div>
+      <div class="content">  
+        <div class="content_wrap">
+            판매점 정보 (구매 사이트)
+            <input type="text"class="content_item">
+        </div>
+      </div>
+      <div class="content">  
+        <div class="content_wrap">
+            더 나누고 싶은 정보
+            <input type="text"class="content_item2">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

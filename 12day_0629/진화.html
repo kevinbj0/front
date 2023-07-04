@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="style1()">배경색 추가</button>
+    <button onclick="style2()">배경이미지 추가</button>
+
+    <script>
+      function style1() {
+        let mybtn = document.getElementById("mybtn");
+        mybtn.style.width = "100px";
+        mybtn.style.height = "100px";
+        mybtn.style.backgroundColor = "green";
+      }
+      function style2() {
+        let mybtn = document.getElementById("mybtn");
+        mybtn.style.width = "150px";
+        mybtn.style.height = "100px";
+        mybtn.style.backgroundImage =
+          "url('https://img.kbs.co.kr/kbs/620/news.kbs.co.kr/data/fckeditor/new/image/2023/01/13/299931673597441715.png')";
+        mybtn.style.backgroundSize = "cover";
+        mybtn.style.backgroundPosition = "center";
+      }
+    </script>
+  </body>
+</html>

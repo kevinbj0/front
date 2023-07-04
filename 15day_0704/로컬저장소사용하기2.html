@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let search = ["콩두유", "과자", "수박"];
+
+      //저장하기, 한 개로 저장
+      //Array -> 하나의 문자열로 바꿈
+
+      let result = JSON.stringify(search);
+
+      console.log(search);
+      console.log(result);
+
+      //배열을 무자열로 바뀐모양 확인함
+      let str = '["콩두유", "과자", "수박"]';
+
+      localStorage.setItem("searchs", str);
+      //꺼내기
+      let sSearchs = localStorage.getItem("searchs");
+      //저장소로부터 꺼내온 데이터
+      console.log(sSearchs); //문자열
+
+      //꺼내온거 ,기준으로 잘라서 배열로 변환
+      let oSearchs = JSON.parse(sSearchs);
+      console.log(oSearchs);
+    </script>
+  </body>
+</html>

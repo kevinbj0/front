@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let ar = ["짜장", "제육", "순대국", "파스타", "집밥"];
+      let result = JSON.stringify(ar);
+      console.log(result);
+
+      localStorage.setItem("data", result);
+      let result2 = localStorage.getItem("data");
+      console.log(result2);
+
+      let search = JSON.parse(result2);
+      console.log(search);
+    </script>
+  </body>
+</html>

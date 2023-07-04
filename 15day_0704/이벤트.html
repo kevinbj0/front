@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //이벤트 핸들러 함수입니다.
+      function func1() {
+        console.log(event);
+        alert("fnc1");
+      }
+      //이벤트핸들러 함수입니다.
+      function func2() {
+        console.log("func2" + event);
+        alert("fnc2");
+      }
+      func2();
+    </script>
+  </head>
+  <body>
+    <h2>이벤트 객체</h2>
+    <p>
+      이벤트(click, mouseover, mouseout, blur, keyup)가 발생할 때 이벤트 리스터
+      및 핸들러 onclick, onmouseover, onmouseout, onfocus, onblur, onkeyup ->
+      이벤트 감지 이벤트 핸들러 : 핸들러함수작성 이벤트 객체 : 이벤트가 발생했을
+      때 발생한 이벤트에 대한 정보를 담은 객체
+    </p>
+    <button onclick="func1()">버튼1</button>
+  </body>
+</html>

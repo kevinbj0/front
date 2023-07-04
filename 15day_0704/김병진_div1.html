@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        outline: 1px solid gray;
+      } */
+      header {
+        border-bottom: 1px solid gray;
+        height: 192px;
+      }
+      .bj_a {
+        text-decoration: none;
+      }
+
+      .div1_wrap {
+        width: 1008px;
+        height: 2000px;
+        margin: 0px auto;
+        padding: 20px;
+        padding-top: 30px;
+      }
+      .div1 {
+        height: 800px;
+        display: flex;
+      }
+      .div1_album_box {
+        width: 476px;
+        height: 340px;
+      }
+      .div1_album_image {
+        height: 316px;
+        margin-top: 24px;
+      }
+      .bj_ul {
+        list-style: none;
+        display: flex;
+        margin: 2px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+      }
+      .bj_li {
+        height: 156px;
+        width: 156px;
+        border: 1px solid black;
+        border: 1px solid rgb(224, 224, 224);
+        position: relative;
+      }
+      .bj_li_center {
+        margin: 0px 2px;
+      }
+      .bj_li_name {
+        position: absolute;
+        bottom: 0px;
+        height: 22px;
+        width: 100%;
+        padding-top: 8px;
+        line-height: 14px;
+        background-color: rgb(0, 0, 0, 0.5);
+        text-align: center;
+        font-size: 12px;
+        overflow: hidden;
+      }
+      .bj_li_a {
+        color: white;
+        text-decoration: none;
+      }
+      .bj_li_a:hover {
+        text-decoration-line: underline;
+      }
+      .div1_event_box {
+        width: 236px;
+        height: 340px;
+        margin: 0px 10px;
+      }
+      .div1_event_image {
+        height: 316px;
+        margin-top: 24px;
+        background-image: url("https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230628043101.png/melon/quality/80://cdnimg.melon.co.kr/svc/images/main/imgUrl20230629053044.jpg/melon/quality/80");
+        background-size: cover;
+      }
+      .div1_login_box {
+        width: 280px;
+        height: 340px;
+      }
+      .login {
+        width: 246px;
+        height: 117px;
+        margin-top: 24px;
+        padding: 0px 17px;
+        background-color: rgb(251, 251, 251);
+        outline: 1px solid rgb(224, 224, 224);
+      }
+      .login_top {
+        height: 49px;
+        position: relative;
+      }
+      .login_text {
+        height: 18px;
+        width: 246px;
+        position: absolute;
+        bottom: 5px;
+        line-height: 18px;
+        font-size: 11px;
+        color: gray;
+      }
+      .login_add {
+        position: absolute;
+        right: 0px;
+        text-decoration: none;
+        color: gray;
+      }
+      .login_add:hover {
+        text-decoration-line: underline;
+      }
+
+      .login_button {
+        height: 42px;
+        color: white;
+        background-color: rgb(0, 211, 68);
+        text-align: center;
+        line-height: 42px;
+        font-size: 14px;
+      }
+      .login_button:hover {
+        background-color: rgb(1, 185, 37);
+      }
+      .div1_event_mini {
+        width: 280px;
+        height: 188px;
+        margin-top: 11px;
+        background-image: url("https://cdnimg.melon.co.kr/svc/images/main/imgUrl20230619042826.png/melon/quality/80");
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡdiv1 STARTㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+    <div class="div1_wrap">
+      <!-- div1 -->
+      <div class="div1">
+        <!-- div1 앨범 SECTION -->
+        <div class="div1_album_box">
+          <div class="div1_album_image">
+            <ul class="bj_ul">
+              <!-- 앨범 Image 1 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/625/11277625_20230703112856_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">빈지노 (Beenzino)</a>
+                </div>
+              </li>
+              <!-- 앨범 Image 2 -->
+              <li
+                class="bj_li_center bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/698/11277698_20230703131244_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">NMIXX</a>
+                </div>
+              </li>
+              <!-- 앨범 Image 3 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/76/795/11276795_20230703102814_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">김범수</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="bj_ul">
+              <!-- 앨범 Image 4 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/76/570/11276570_20230629163647_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">#안녕</a>
+                </div>
+              </li>
+              <!-- 앨범 Image 5 -->
+              <li
+                class="bj_li_center bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/602/11277602_20230703105200_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">허회경</a>
+                </div>
+              </li>
+              <!-- 앨범 Image 6 -->
+              <li
+                class="bj_li"
+                style="
+                  background-image: url('https://cdnimg.melon.co.kr/cm2/album/images/112/77/167/11277167_20230630173046_500.jpg/melon/quality/80/resize/156/optimize');
+                "
+              >
+                <div class="bj_li_name">
+                  <a href="" class="bj_li_a">배다해</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- div1 앨범 SECTION END -->
+        <!-- div1 이벤트 SECTION -->
+        <div class="div1_event_box">
+          <div class="div1_event_image"></div>
+        </div>
+        <!-- 이벤트 부분 SECTION -->
+        <!-- div1 로그인 SECTION -->
+        <div class="div1_login_box">
+          <div class="login">
+            <div class="login_top">
+              <div class="login_text">
+                멜론을 더 안전하게 이용하세요.
+                <a href="" class="login_add">회원가입</a>
+              </div>
+            </div>
+            <a href="" class="bj_a"><div class="login_button">로그인</div></a>
+          </div>
+          <!-- 로그인 하단 이벤트 -->
+          <div class="div1_event_mini"></div>
+        </div>
+      </div>
+      <!-- 로그인 SECTION END-->
+      <!-- div1 END-->
+    </div>
+    <!-- div1_wrap END-->
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡdiv1 ENDㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+  </body>
+</html>

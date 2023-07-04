@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let msg = [];
+      //프로젝트 로드 후 동작
+      window.addEventListener("load", function () {
+        // document.querySelectorAll : 해당요소들을 배열로 가져옴
+        let slide_items = document.querySelectorAll(".slide-item");
+        for (let i = 0; i < slide_items.length; i++) {
+          msg[i] = slide_items[i].innerHTML;
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="gallert-wrap">
+      <div class="slide">
+        <div class="slide-item">여름이 왔네요</div>
+        <div class="slide-item">프론트 프로젝트 시작 하루전!</div>
+        <div class="slide-item">밖은 덥지만 에이콘은 시원해요</div>
+        <div class="slide-item">여기가 천국</div>
+      </div>
+    </div>
+  </body>
+</html>

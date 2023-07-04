@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        outline: 1px solid black;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: 0.5s;
+      }
+      .box:hover {
+        height: 300px;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: 0.5s;
+        margin-top: 30px;
+      }
+
+      .box2:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>transition</h2>
+    <p>
+      엘리먼트(태그)에 스타일의 변화가 일정시간에 걸쳐서 부드럽게 나타나도록 할
+      때 사용함
+    </p>
+
+    <!-- 마우스가 올려졌을 떄 박스의 크기가 자연스럽게 늘어나는 효과를 줄 수 있음 -->
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+</html>
