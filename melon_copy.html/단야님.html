@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*-------------- 헤더 부분---------------*/
+      /* .divhr2{
+            height: 10px;
+            border-top: 10px solid black;
+            position: absolute;
+            top: 30px;
+        } */
+      .dy_hr1 {
+        margin-top: -8px;
+      }
+
+      .dy_header_main {
+        width: 1048px;
+        height: 10px;
+        /*             border: 1px solid black; */
+        margin: 0 auto;
+        padding: 5px;
+      }
+
+      .dy_header_main_2 {
+        width: 1048px;
+        height: 150px;
+        /*             border: 1px solid black; */
+        margin: 0 auto;
+        padding: 5px;
+      }
+
+      .dy_header_1 {
+        width: 1008px;
+        height: 38px;
+        display: flex;
+        /*             border: 1px solid black; */
+        margin: 0 auto;
+        padding: 0px;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .dy_menu {
+        width: 1008px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: block;
+        position: relative;
+        z-index: 14;
+      }
+
+      .dy_menu > ul {
+        margin-top: -25px;
+        display: block;
+        list-style: none;
+      }
+
+      /* .menu>ul{           display: block;        } */
+
+      .dy_li_0 {
+        margin-left: -50px;
+        float: left;
+      }
+
+      .dy_li_1_1 {
+        margin-top: 4px;
+        margin-left: 548px;
+        float: left;
+      }
+
+      .dy_li_1 {
+        margin-left: -35px;
+        float: left;
+      }
+
+      .dy_li_2 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li_3 {
+        margin-left: -30px;
+        float: left;
+      }
+
+      .dy_li_4 {
+        margin-left: -30px;
+        float: left;
+      }
+
+      ul > li {
+        margin: 0 7px 0 0;
+        padding-left: 9px;
+      }
+
+      .dy_header_2 {
+        /*             border: 1px solid black; */
+        width: 1008px;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      .dy_search_bar {
+        display: inline;
+        position: relative;
+        float: left;
+        width: 322px !important;
+        height: 40px;
+        margin: 36px 0 0 11px;
+        background: url(//cdnimg.melon.co.kr/resource/image/web/common/bg_cmn_search322.png)
+          no-repeat;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        justify-content: center;
+      }
+
+      .dy_text1 {
+        float: left;
+        border: 0;
+        padding-top: 3px;
+        margin: 0px 0 0 -0px;
+        padding-left: 0;
+        height: 20px;
+        box-shadow: none;
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      .dy_dotbogi1 {
+        margin-left: 10px;
+        margin-top: 5px;
+        overflow: clip;
+        width: 28px;
+      }
+
+      .dy_sudden_up_img {
+        width: 42px;
+        height: 16px;
+        float: left;
+        margin: 3px 0 0 3px;
+        background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_loce_151207.png)
+          no-repeat left top;
+        margin-top: 46.5px;
+        margin-left: 14px;
+      }
+
+      .dy_header_3 {
+        width: 1008px;
+        /*             border: 1px solid black; */
+        margin: 0 auto;
+        position: relative;
+        height: 55px;
+        z-index: 14;
+      }
+
+      .dy_header_3 > ul {
+        margin-left: -43.5px;
+        display: block;
+        list-style: none;
+      }
+
+      .dy_li1 {
+        margin-left: -10px;
+        float: left;
+      }
+
+      .dy_li2 {
+        margin-left: -20px;
+        float: left;
+      }
+
+      .dy_li3 {
+        margin-left: -20px;
+        float: left;
+      }
+
+      .dy_li4 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li5 {
+        margin-left: -30px;
+        float: left;
+      }
+
+      .dy_li6 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li7 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li8 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li9 {
+        margin-left: -25px;
+        float: left;
+      }
+
+      .dy_li10 {
+        float: left;
+        margin-left: 210px;
+        float: left;
+      }
+
+      /*--------------실시간순위 애니메이트 부분---------------*/
+      .dy_rank_menu {
+        list-style: none;
+        display: flex;
+      }
+
+      .dy_rank_menu_item {
+        /* border: 1px solid black; */
+        width: 100px;
+        height: 10px;
+        margin-left: -60px;
+        text-align: center;
+        line-height: 26px;
+      }
+
+      .dy_rank_menu_item > ul {
+        display: none;
+      }
+
+      .dy_rank_sub_menu {
+        display: none;
+        list-style: none;
+        margin-left: 0px;
+      }
+
+      .dy_rank_sub_menu > li {
+        float: left;
+        margin-left: -25px;
+      }
+
+      .dy_rank_menu_item:hover .dy_rank_sub_menu {
+        display: block;
+        width: 120px;
+        height: 260px;
+        background-color: #fff;
+        position: relative;
+        z-index: 9999;
+        border: 1px solid black;
+        margin-top: -40px;
+        padding-top: 10px;
+      }
+    </style>
+
+    <style>
+      .몸통 {
+        height: 600px;
+        width: 1008px;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+    </style>
+
+    <style>
+      .dy_footer_wrap1 {
+        width: 1048px;
+        height: 52px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+      }
+
+      .dy_footer_1st {
+        width: 1008px;
+        height: 52px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+      }
+
+      .dy_footer_1st_menu {
+        list-style: none;
+        display: flex;
+        margin-left: 537px;
+        /* border: 1px solid black; */
+      }
+
+      .dy_footer_1st_menu > li {
+        color: #7d7d7d;
+      }
+
+      /* .dy_li1_footer{
+        size:
+    } */
+
+      .dy_footer_wrap2 {
+        width: 1048px;
+        height: 145px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+      }
+
+      .dy_footer_2nd {
+        width: 1008px;
+        height: 65px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+      }
+
+      .dy_footer_2nd_menu {
+        height: 20px;
+        width: 1008px;
+        list-style: none;
+        display: flex;
+        /* border: 1px solid black; */
+        margin-left: -41.5px;
+      }
+
+      .dy_footer_2nd_menu_list {
+        font-size: 12px;
+        margin-left: 0px;
+        color: #505050;
+      }
+
+      .dy_footer_3rd {
+        width: 1008px;
+        height: 80px;
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        list-style: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---------------- 헤더 부분 ----------------->
+    <!-- <div class="divhr2"></div> -->
+    <hr class="dy_hr1" color="#04c944" size="4px" />
+    <div class="dy_header_main">
+      <div class="dy_header_1">
+        <div class="dy_menu">
+          <ul>
+            <li class="dy_li_0">
+              <a href="https://ticket.melon.com/main/index.htm">
+                <img
+                  src="./멜론티켓_off.jpg"
+                  onmouseover="this.src='./멜론티켓_on.jpg'"
+                  onmouseout="this.src='./멜론티켓_off.jpg'"
+                  style="width: 77%; height: 77%"
+              /></a>
+            </li>
+            <li class="dy_li_1_1">
+              <a
+                href="https://www.melon.com/commerce/pamphlet/web/sale_listMainView.htm"
+              >
+                <img src="./이용권이미지.PNG" style="width: 55%; height: 55%"
+              /></a>
+            </li>
+            <li class="dy_li_1">
+              <a
+                href="https://www.melon.com/commerce/pamphlet/web/sale_listMainView.htm"
+              >
+                <img
+                  src="./이용권구매_off.jpg"
+                  onmouseover="this.src='./이용권구매_on.jpg'"
+                  onmouseout="this.src='./이용권구매_off.jpg'"
+                  style="width: 75%; height: 75%"
+              /></a>
+            </li>
+            <li class="dy_li_2">
+              <a href="https://www.melon.com/event/vip/index.htm">
+                <img
+                  src="./멜론라운지_off.jpg"
+                  onmouseover="this.src='./멜론라운지_on.jpg'"
+                  onmouseout="this.src='./멜론라운지_off.jpg'"
+                  style="width: 75%; height: 75%"
+              /></a>
+            </li>
+            <li class="dy_li_3">
+              <a href="https://www.melon.com/event/index.htm">
+                <img
+                  src="./이벤트_off.jpg"
+                  onmouseover="this.src='./이벤트_on.jpg'"
+                  onmouseout="this.src='./이벤트_off.jpg'"
+                  style="width: 75%; height: 75%"
+              /></a>
+            </li>
+            <li class="dy_li_4">
+              <a href="https://www.melon.com/customer/announce/index.htm">
+                <img
+                  src="./공지사항_off.jpg"
+                  onmouseover="this.src='./공지사항_on.jpg'"
+                  onmouseout="this.src='./공지사항_off.jpg'"
+                  style="width: 75%; height: 75%"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr color="#f4f4f4" size="1px" />
+    <div class="dy_header_main_2">
+      <div class="dy_header_2">
+        <div class="dy_melonimg">
+          <a
+            href="http://127.0.0.1:5500/%EB%A9%9C%EB%A1%A0%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/%EB%A9%9C%EB%A1%A0%ED%97%A4%EB%8D%94.html"
+            ><img
+              src="https://cdnimg.melon.co.kr/resource/image/web/common/logo_melon142x99.png"
+          /></a>
+        </div>
+
+        <div class="dy_search_bar">
+          <input
+            class="dy_text1"
+            type="text"
+            placeholder="[금주의 차트] 한눈에 보는 주간 차트 리뷰"
+            style="width: 249px; display: block"
+          />
+
+          <div class="dy_dotbogi">
+            <img class="dy_dotbogi1" src="./멜론돋보기.PNG" />
+          </div>
+        </div>
+
+        <div class="dy_sudden_up_img"></div>
+
+        <div
+          class="dy_auto_awards"
+          style="margin-top: 25.5px; margin-left: 15px"
+        >
+          <!---------------- 실시간순위 애니메이트 시작 부분 ----------------->
+          <ul class="dy_rank_menu">
+            <li class="dy_rank_menu_item" style="font-size: 12px">
+              &nbsp;&nbsp;1 Charlie Puth
+              <ul class="dy_rank_sub_menu">
+                <li style="margin-left: -41px">&nbsp;&nbsp;1 Charlie Puth</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;2 자장가</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;3 빈지노(Been···</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;4 잔나비</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;5 이솔로몬</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;6 PONY</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;7 쿨(COOL)</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;8 IVE(아이브)</li>
+                <br />
+                <li style="margin-left: -41px">&nbsp;&nbsp;9 NewJeans</li>
+                <br />
+                <li style="margin-left: -41px">10 Bruno Mars</li>
+                <br />
+              </ul>
+            </li>
+          </ul>
+          <!---------------- 실시간순위 애니메이트 끝 부분 ----------------->
+        </div>
+      </div>
+
+      <div class="dy_header_3">
+        <ul>
+          <li class="dy_li1">
+            <a href="https://www.melon.com/chart/index.htm"
+              ><img
+                src="./멜론차트_off.jpg"
+                onmouseover="this.src='./멜론차트_on.jpg'"
+                onmouseout="this.src='./멜론차트_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li2">
+            <a href="https://www.melon.com/new/index.htm"
+              ><img
+                src="./최신음악_off.jpg"
+                onmouseover="this.src='./최신음악_on.jpg'"
+                onmouseout="this.src='./최신음악_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li3">
+            <a href="https://www.melon.com/genre/song_list.htm"
+              ><img
+                src="./장르음악_off.jpg"
+                onmouseover="this.src='./장르음악_on.jpg'"
+                onmouseout="this.src='./장르음악_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li4">
+            <a href="https://www.melon.com/dj/today/djtoday_list.htm"
+              ><img
+                src="./멜론DJ_off.jpg"
+                onmouseover="this.src='./멜론DJ_on.jpg'"
+                onmouseout="this.src='./멜론DJ_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li5">
+            <a href="https://www.melon.com/tv/index.htm"
+              ><img
+                src="./멜론TV_off.jpg"
+                onmouseover="this.src='./멜론TV_on.jpg'"
+                onmouseout="this.src='./멜론TV_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li6">
+            <a href="https://www.melon.com/artistplus/todayupdate/index.htm"
+              ><img
+                src="./스타포스트_off.jpg"
+                onmouseover="this.src='./스타포스트_on.jpg'"
+                onmouseout="this.src='./스타포스트_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li7">
+            <a href="https://www.melon.com/musicstory/today/index.htm"
+              ><img
+                src="./매거진_off.jpg"
+                onmouseover="this.src='./매거진_on.jpg'"
+                onmouseout="this.src='./매거진_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li8">
+            <a href="https://www.melon.com/melonaward/weekAward.htm"
+              ><img
+                src="./뮤직어워드_off.jpg"
+                onmouseover="this.src='./뮤직어워드_on.jpg'"
+                onmouseout="this.src='./뮤직어워드_off.jpg'"
+            /></a>
+          </li>
+          <li class="dy_li9">
+            <a href="https://www.melon.com/edu/index.htm"
+              ><img
+                src="./어학_off.jpg"
+                onmouseover="this.src='./어학_on.jpg'"
+                onmouseout="this.src='./어학_off.jpg'"
+            /></a>
+          </li>
+        </ul>
+        <ul>
+          <li class="dy_li10">
+            <a href="로그인페이지"
+              ><img
+                src="./마이뮤직_off.jpg"
+                onmouseover="this.src='./마이뮤직_on.jpg'"
+                onmouseout="this.src='./마이뮤직_off.jpg'"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr color="#c3c3c3" />
+
+    <div class="몸통"></div>
+  </body>
+
+  <body>
+    <hr />
+    <div class="dy_footer_wrap">
+      <div class="dy_footer_1st">
+        <ul class="dy_footer_1st_menu">
+          <li class="dy_li1_footer">
+            <a href="https://www.melon.com/m6/campaign.htm"
+              ><img
+                style="height: 19px; width: 99px"
+                src="./멜론_off.jpg"
+                onmouseover="this.src='./멜론_on.jpg'"
+                onmouseout="this.src='./멜론_off.jpg'"
+            /></a>
+          </li>
+
+          <li class="dy_li2_footer">
+            <a href="https://studio.melon.com/"
+              ><img
+                style="height: 19px; width: 76px"
+                src="./맥플레이어_off.jpg"
+                onmouseover="this.src='./맥플레이어_on.jpg'"
+                onmouseout="this.src='./맥플레이어_off.jpg'"
+            /></a>
+          </li>
+
+          <li class="dy_li3_footer">
+            <a href="https://www.melon.com/customer/serviceintro/index.htm"
+              ><img
+                style="height: 19px; width: 107px"
+                src="./윈도우즈플레이어_off.jpg"
+                onmouseover="this.src='./윈도우즈플레이어_on.jpg'"
+                onmouseout="this.src='./윈도우즈플레이어_off.jpg'"
+            /></a>
+          </li>
+
+          <li class="dy_li4_footer">
+            <a
+              href="https://www.melon.com/customer/serviceintro/multi_pc_web.htm"
+              ><img
+                style="height: 19px; width: 76px"
+                src="./맥플레이어_off.jpg"
+                onmouseover="this.src='.맥플레이어_on.jpg'"
+                onmouseout="this.src='./맥플레이어_off.jpg'"
+            /></a>
+          </li>
+
+          <li class="dy_li5_footer">
+            <a href="https://www.melon.com/customer/serviceintro/ipad.htm"
+              ><img
+                style="height: 19px; width: 27px"
+                src="./ipad_off.jpg"
+                onmouseover="this.src='./ipad_on.jpg'"
+                onmouseout="this.src='./ipad_off.jpg'"
+            /></a>
+          </li>
+
+          <li class="dy_li6_footer">
+            <a href="https://faqs2.melon.com/customer/index.htm"
+              ><img
+                style="height: 19px; width: 49px"
+                src="./고객센터_off.jpg"
+                onmouseover="this.src='./고객센터_on.jpg'"
+                onmouseout="this.src='./고객센터_off.jpg'"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr color="#efefef" />
+    <div class="dy_footer_wrap">
+      <div class="dy_footer_2nd">
+        <ul class="dy_footer_2nd_menu">
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://info.melon.com/terms/web/terms1_1.html"
+              >이용약관&nbsp;&nbsp;</a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://info.melon.com/terms/web/terms1_3.html"
+            >
+              <strong
+                >&nbsp;|&nbsp;&nbsp;&nbsp;위치기반서비스
+                이용약관&nbsp;&nbsp;</strong
+              ></a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://info.melon.com/terms/web/terms3.html"
+            >
+              <strong
+                >&nbsp;|&nbsp;&nbsp;&nbsp;개인정보처리방침&nbsp;&nbsp;</strong
+              ></a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://info.melon.com/terms/web/terms5_1.html"
+            >
+              &nbsp;|&nbsp;&nbsp;&nbsp;청소년보호정책&nbsp;&nbsp;</a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://faqs2.melon.com/customer/faq/informFaq.htm?no=1&faqId=QUES20140616000001&SEARCH_KEY=&SEARCH_PAR_CATEGORY=CATE20130909000006&SEARCH_CATEGORY=CATE20130909000021"
+            >
+              &nbsp;|&nbsp;&nbsp;&nbsp;제휴/프로모션문의&nbsp;&nbsp;</a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://www.melon.com/emailCollectionReject.html"
+              >&nbsp;|&nbsp;&nbsp;&nbsp;이메일주소무단수집거부&nbsp;&nbsp;</a
+            >
+          </li>
+          <li class="dy_footer_2nd_menu_list">
+            <a
+              style="text-decoration: none; color: inherit"
+              href="https://partner.melon.com/partrct/login/web/login_loginProcess.htm?t=s"
+            >
+              &nbsp;|&nbsp;&nbsp;&nbsp;파트너센터&nbsp;</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="dy_footer_3rd">
+        <li style="font-size: 11px; color: #909090">
+          <strong>(주)카카오엔터테인먼트</strong> 경기도 성남시 분당구 판교역로
+          221 &nbsp;|&nbsp; 대표이사 : 이진수, 김성수 &nbsp;|&nbsp;
+          사업자등록번호 : 220-88-02594 &nbsp;|&nbsp; 통신판매업신고번호 :
+          2018-성남분당B-0004 사업자정보확인><br />
+          문의전화 : 1566-7727 (평일 09:00-18:00, 유료) &nbsp;|&nbsp; 이메일 :
+          melon_info@kakaoent.com &nbsp;|&nbsp; 호스팅서비스사업자 :
+          (주)카카오엔터테인먼트 &nbsp;|&nbsp; © Kakao Entertainment Corp.
+        </li>
+      </div>
+    </div>
+  </body>
+</html>
