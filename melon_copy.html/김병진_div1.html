@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
+      /* div {
         outline: 1px solid gray;
-      }
+      } */
       header {
         border-bottom: 1px solid gray;
         height: 192px;
@@ -67,6 +67,9 @@
         color: white;
         text-decoration: none;
       }
+      .bj_li_a:hover {
+        text-decoration-line: underline;
+      }
       .bj_li_cover {
         height: 126px;
         transition: background-color 0.3s;
@@ -102,17 +105,15 @@
         display: block;
       }
 
-      .bj_li_a:hover {
-        text-decoration-line: underline;
-      }
       .div1_event_box {
         width: 236px;
         height: 340px;
-        margin: 0px 10px;
+        margin: 0px 8px;
+        position: relative;
       }
       /* 이벤트 슬라이드 자리
        */
-      .div1_contain {
+      .div1_container {
         margin-top: 24px;
         overflow: hidden;
         display: flex;
@@ -121,8 +122,8 @@
         height: 316px;
         width: 236px;
         background-size: cover;
-        transition: 0.5s;
-        transform: translateX(-100px);
+        transition: 0.7s;
+        /* transform: translateX(-100px); */
       }
       .div1_login_box {
         width: 280px;
@@ -182,7 +183,9 @@
         height: 15px;
         width: 113px;
         display: flex;
-        position: relative;
+        position: absolute;
+        right: 2px;
+        top: 1px;
       }
       .bj_event_slide_button {
         height: 10px;
@@ -191,30 +194,33 @@
         background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%ED%9A%8C%EC%83%89.png?raw=true");
         background-size: cover;
       }
+      .bj_event_slide_button:hover {
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/%EC%9B%90_%EC%84%A0%ED%83%9D%EB%90%A8.png?raw=true");
+      }
       .bj_event_slide_stop {
         width: 13px;
         height: 13px;
-        position: absolute;
-        top: 1px;
-        right: 1px;
+        margin-left: 8px;
+        margin-top: 1px;
         border-radius: 50%;
         outline: 1px solid rgb(218, 218, 218);
+      }
+      .bj_event_slide_stop:hover {
+        outline: 1px solid rgb(171, 171, 171);
+      }
+      .bj_stop_image {
+        height: 8px;
+        width: 8px;
+        margin: 2.5px auto;
+        /* background-image: url("https://github.com/kevinbj0/front/blob/main/image_/Play.png?raw=true"); */
+        background-image: url("https://github.com/kevinbj0/front/blob/main/image_/STOP.png?raw=true");
+        background-size: cover;
+        outline: none;
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="bj_event_slide">
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_button"></div>
-        <div class="bj_event_slide_stop"></div>
-      </div>
-    </header>
+    <header></header>
     <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡdiv1 STARTㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
     <div class="div1_wrap">
       <!-- div1 -->
@@ -379,7 +385,19 @@
         <!-- div1 앨범 SECTION END -->
         <!-- div1 이벤트 SECTION -->
         <div class="div1_event_box">
-          <div class="div1_contain">
+          <div class="bj_event_slide">
+            <div class="bj_event_slide_button" onclick="click_event(0)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(1)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(2)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(3)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(4)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(5)"></div>
+            <div class="bj_event_slide_button" onclick="click_event(6)"></div>
+            <div class="bj_event_slide_stop">
+              <div class="bj_stop_image"></div>
+            </div>
+          </div>
+          <div class="div1_container">
             <a href="">
               <div
                 class="div1_event_image"
@@ -443,26 +461,36 @@
         bj_cover_play[index].style.display = "none";
       }
 
-      let bj_index = 0;
-      let slide;
-      //이미지 슬라이드
-      // let bj_index = 0;
-      // let bj_Image = [];
-      // let bj_slide = document.querySelector(".div1_event_box");
-      // let bj_slide_items = document.querySelectorAll(".div1_event_image");
-      // bj_slide_items[0].style.display = "block";
-      // for (let i = 0; i < bj_slide_items.length; i++) {
-      //   bj_Image[i] = bj_slide_items[i].style.backgroundImage;
-      // }
+      // 슬라이드 부분
+      let bj_event_container = document.querySelectorAll(".div1_event_image");
+      let bj_event_button = document.querySelectorAll("bj_event_slide_button");
+      //이벤트 개수
+      let bj_event_Max = 2;
+      // 자동으로 증가하는 포지션
+      let bj_event_position = 0;
+      let bj_event_play = 0;
 
-      // function changeEvent() {
-      //   bj_index++;
-      //   if (bj_index >= bj_slide_items.length) {
-      //     bj_index = 0;
-      //   }
-      //   bj_slide_items[0].style.backgroundImage = bj_Image[bj_index];
-      // }
-      // setInterval(changeEvent, 3000);
+      function changeEvent() {
+        bj_event_position++;
+        bj_event_play = 236 * bj_event_position;
+        if (bj_event_position > bj_event_Max) {
+          bj_event_position = 0;
+          bj_event_play = 0;
+        }
+        for (let i = 0; i <= bj_event_Max; i++) {
+          bj_event_container[i].style.transform =
+            "translateX(-" + bj_event_play + "px)";
+        }
+      }
+      function click_event(index) {
+        bj_event_position = index;
+        bj_event_play = 236 * bj_event_position;
+        for (let i = 0; i <= bj_event_Max; i++) {
+          bj_event_container[i].style.transform =
+            "translateX(-" + bj_event_play + "px)";
+        }
+      }
+      setInterval(changeEvent, 4000);
     </script>
   </body>
 </html>
