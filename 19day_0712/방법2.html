@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        outline: 3px solid gray;
+      }
+      .wrap {
+        outline: none;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box" onclick="clickBox(this)">A</div>
+      <div class="box" onclick="clickBox(this)">A</div>
+      <div class="box" onclick="clickBox(this)">A</div>
+      <div class="box" onclick="clickBox(this)">A</div>
+    </div>
+    <script>
+      function clickBox(a) {
+        a.style.backgroundColor = "gray";
+        a.innerHTML = "Nice";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        outline: 3px solid gray;
+      }
+      .wrap {
+        outline: none;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box" onclick="clickBox(0)">A</div>
+      <div class="box" onclick="clickBox(1)">A</div>
+      <div class="box" onclick="clickBox(2)">A</div>
+      <div class="box" onclick="clickBox(3)">A</div>
+    </div>
+    <script>
+      function clickBox(index) {
+        let a = document.querySelectorAll(".box");
+        a[index].style.backgroundColor = "gray";
+        a[index].innerHTML = "Nice";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        outline: 3px solid gray;
+      }
+      .wrap {
+        outline: none;
+      }
+      .box1 {
+        height: 150px;
+        width: 150px;
+      }
+      .box2 {
+        height: 150px;
+        width: 150px;
+      }
+      .box3 {
+        height: 150px;
+        width: 150px;
+      }
+      .box4 {
+        height: 150px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1" onclick="clickBox1()">A</div>
+      <div class="box2" onclick="clickBox2()">A</div>
+      <div class="box3" onclick="clickBox3()">A</div>
+      <div class="box4" onclick="clickBox4()">A</div>
+    </div>
+    <script>
+      function clickBox1() {
+        let a = document.querySelector(".box1");
+        a.style.backgroundColor = "gray";
+        a.innerHTML = "Nice";
+      }
+      function clickBox2() {
+        let a = document.querySelector(".box2");
+        a.style.backgroundColor = "gray";
+        a.innerHTML = "Nice";
+      }
+      function clickBox3() {
+        let a = document.querySelector(".box3");
+        a.style.backgroundColor = "gray";
+        a.innerHTML = "Nice";
+      }
+      function clickBox4() {
+        let a = document.querySelector(".box4");
+        a.style.backgroundColor = "gray";
+        a.innerHTML = "Nice";
+      }
+    </script>
+  </body>
+</html>
