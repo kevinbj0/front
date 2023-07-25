@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let k = 1;
+      let num = 0;
+      let sw = 0;
+      let sum = 0;
+      // 몇 팩토리얼
+      // 분자값
+      // 부호값
+      // 합
+      for (k = 1; k <= 10; k++) {
+        // 분자값 정해줌
+        num = k;
+        // 팩토리얼 연산
+        for (i = 0; i < k; i++) {
+          num = num / (k - i);
+        }
+        // 부호 결정
+        if (sw == 0) {
+          sum = sum + num;
+          sw = 1;
+          document.write("<p>" + k + "번째 값 : + " + num + "<p>");
+        } else {
+          sum = sum - num;
+          sw = 0;
+          document.write("<p>" + k + "번째 값 : - " + num + "<p>");
+        }
+      }
+      document.write("SUM : " + sum);
+    </script>
+  </body>
+</html>
